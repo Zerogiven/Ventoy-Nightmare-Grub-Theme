@@ -1,0 +1,175 @@
+# Global Property
+title-text: ""
+
+desktop-image: "background.png"
+desktop-color: "white"
+
+message-color: "white"
+
+terminal-font: "Terminus Regular 14"
+terminal-box: "terminal_box_*.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+menu-tip-left: "9%+2"
+menu-tip-top: "15%+9"
+menu-tip-color: "#ffffff"
+
+# Logo
++ image {
+  id = "__my_logo__"
+  left = 0%
+  top = 0%
+  file = "logo.png"
+}
+
+# Grub Hotkeys
++ hbox {
+  left = 6%-3
+  top = 77%+3
+  width = 0%
+  height = 25
+
+  + label {
+    text = "@KEYMAP_SHORT@"
+    color = "white"
+    align = "left"
+    font = "Terminus Regular 12"
+  }
+}
+
+# Vtoy Hotkeys
++ hbox { 
+  left = 6%-3
+  top = 79%+3
+  width = 0%
+  height = 25
+
+  + label {
+    text = "@VTOY_HOTKEY_TIP@"
+    color = "white"
+    align = "left"
+    font = "Terminus Regular 12"
+  }
+}
+
+# Progress Bar
++ progress_bar {
+  id = "__timeout__"
+  text = "@TIMEOUT_NOTIFICATION_LONG@"
+  left = 50%-300
+  top = 5%
+  width = 600
+  height = 25
+  font = "Terminus Regular 14"
+  text_color = "white"
+  bar_style = "*"
+  highlight_style = "*"
+}
+
+# Menu
++ boot_menu {
+  left = 5%
+  width = 60%
+  top = 14%
+  height = 69%
+
+  menu_pixmap_style = "menu_*.png"
+
+  item_font = "Terminus Regular 18"
+  item_color = "#ffffff"  
+  item_height = 32
+  item_spacing = 5
+  item_padding = 10
+
+  icon_width = 26
+  icon_height = 24
+  
+  selected_item_font = "Terminus Regular 18"
+  selected_item_color= "#ffffff"
+  selected_item_pixmap_style = "select_*.png"
+
+  item_icon_space = 15
+
+  scrollbar = true
+  scrollbar_width = 16
+  scrollbar_thumb = "slider_*.png"
+}
+
+# Vtoy Info
++ hbox { 
+  left = 11%
+  top = 1%
+  width = 10%
+  height = 25
+  
+  + label {
+    text = "@VTOY_MEM_DISK@"
+    color = "gray"
+    align = "left"
+    font = "Terminus Regular 12"
+  } 
+}
+
+# Vtoy Info
++ hbox { 
+  left = 25%
+  top = 1%
+  width = 10%
+  height = 25
+  
+  + label {
+    text = "@VTOY_GRUB2_MODE@"
+    color = "gray"
+    align = "left"
+    font = "Terminus Regular 12"
+  } 
+}
+
+# Vtoy Info
++ hbox { 
+  left = 35%
+  top = 1%
+  width = 10%
+  height = 25
+  
+  + label {
+    text = "@VTOY_WIMBOOT_MODE@"
+    color = "gray"
+    align = "left"
+    font = "Terminus Regular 12"
+  }
+}
+
+# Vtoy Info
++ hbox { 
+  left = 50%
+  top = 1%
+  width = 10%
+  height = 25
+    
+  + label {
+    text = "@VTOY_ISO_RAW@"
+    color = "gray"
+    align = "left"
+    font = "Terminus Regular 12"
+  } 
+}
+
+# Vtoy Info
++ hbox { 
+  left = 90%
+  top = 1% 
+  width = 10%
+  height = 25
+    
+  + label {
+    text = "@VTOY_ISO_UEFI_DRV@"
+    color = "gray"
+    align = "left"
+    font = "Terminus Regular 12"
+  } 
+}
